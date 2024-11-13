@@ -1,17 +1,15 @@
-const ProductModel = require('../models/productModel');
-
-exports.getProducts = async(req, res, nxt) =>{
-    const products = await ProductModel.find({});
-
+exports.getProducts = async (req, res, next) => {
+    
     res.json({
         success: true,
-        products
+        message:'get products'
     })
 }
 
-exports.getSingleProducts =(req, res, nxt) =>{
+exports.getSingleProducts = async (req, res, next) => {
+    
     res.json({
         success: true,
-        message: 'Get Single products working!'
+        message:'get single products'
     })
 }

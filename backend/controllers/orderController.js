@@ -1,6 +1,11 @@
-exports.createorder = (req, res, nxt) =>{
-    res.json({
-        success: true,
-        message: 'Order works!'
-    })
+const orderModel = require('../models/orderModel');
+
+exports.createOrder = async (req, res, next) => {
+
+    res.json(
+        {
+            success:true,
+            message:"order"
+        }
+    )
 }
